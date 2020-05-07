@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const schema = mongoose.Schema
+const Schema = mongoose.Schema
 
 // Create Rock Schema and model
 
@@ -11,10 +11,12 @@ const RockSchema = new Schema({
     type: {
         type: String,
     },
-    hardeness: {
+    hardness: {
         type: Number,
     }
 });
 
 
-const Rocks = mongoose.model('ninja', NinjaSchema);
+const Rock = mongoose.model('rock', RockSchema);
+
+module.exports = Rock;
