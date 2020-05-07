@@ -8,6 +8,7 @@ router.get('/rocks', function(req, res){
 
 // add a new rock to the db
 router.post('/rocks', function(req, res){
+    console.log(req.body);
     res.send({type: 'POST'});
 });
 
